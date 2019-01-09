@@ -1,0 +1,18 @@
+{
+  "name": "home-web",
+  "version": "1.0.0",
+  "description": "Home Management",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-ws": "^4.0.0",
+    "nunjucks": "^3.1.6",
+    "promise-mysql": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT"
+}

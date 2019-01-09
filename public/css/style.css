@@ -1,0 +1,151 @@
+.transition {
+	transition-duration: 0.25s;
+}
+
+#topbar {
+	height: 50px;
+	background-color: #008fcc;
+}
+
+#content {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 65px;
+	padding-bottom: 30px;
+}
+
+#brand {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 3px;
+	height: 50px;
+	margin: 0px;
+	width: 100%;
+	background-color: #0079ad;
+}
+
+#footer {
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.msg {
+	line-height: 40px;
+	color: #fff;
+	padding: 0 25px;
+	padding-right: 0px;
+}
+
+.msg.bg-warning {
+	color: #000;
+}
+
+.dismiss {
+	float: right;
+	width: 40px;
+	line-height: 40px !important;
+	text-align: center;
+	color: #000 !important;
+	cursor: pointer;
+}
+
+.dismiss:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.entry {
+	cursor: pointer;
+}
+
+.entry:hover {
+	background-color: #282d30;
+}
+
+.entry.active .nav-link {
+	padding-left: 17px;
+}
+
+.entry .nav-link {
+	padding: 0px 20px;
+	line-height: 40px;
+}
+
+.entry.active {
+	background-color: #25292d;
+	border-left: 3px solid #ff9233;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.navbar {
+	padding: 0;
+}
+
+#toggler {
+	width: 50px;
+	height: 50px;
+	border: none;
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#toggler:focus {
+	outline: none;
+}
+
+#actions {
+	flex-direction: row;
+}
+
+.action > a {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.action:hover {
+	background-color: rgba(0, 0, 0, 0.075);
+}
+
+#pages {
+	height: calc(100% - 50px);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100%;
+}
+
+#topnav {
+	margin-left: 25px;
+}
+
+@media(max-width: 767px) {
+	#sidebar.hidden {
+		left: -200px;
+	}
+}
+
+@media(min-width: 768px) {
+	#main {
+		width: calc(100% - 200px);
+		margin-left: auto;
+	}
+
+	#topbar {
+		left: 200px;
+	}
+}

@@ -1,0 +1,60 @@
+<style>
+.camera {
+	background-color: #ff00ff;
+	margin: auto;
+	width: 100%;
+	border: 5px solid;
+	margin: 2.5px;
+}
+.camera > img {
+	width: 100%;
+}
+#cameras {
+	display: flex;
+	flex-wrap: wrap;
+}
+@media(min-width: 960px) {
+	.camera {
+		width: calc(50% - 5px);
+	}
+}
+@media(min-width: 1280px) {
+	.camera {
+		width: calc(33.3333% - 5px);
+	}
+}
+</style>
+<div id="cameras">
+	<img class="camera">
+	<div class="camera">
+	</div>
+	<div class="camera">
+	</div>
+	<div class="camera">
+	</div>
+	<div class="camera">
+	</div>
+	<div class="camera">
+	</div>
+	<div class="camera">
+	</div>
+</div>
+<script>
+api.sendWS({module: "cameras", action: "list"}, function(data, err) {
+	if(err) {
+		console.log(err);
+	} else {
+		var cameraElem = $("#cameras");
+		cameraElem.empty();
+		for(var i = 0; i < data.length; ++i) {
+			var wrapper = document.createElement("div");
+			wrapper.className = "camera";
+			var img = document.createElement("img");
+			img.src = "/cameras/view/" + data[i].param;
+			$(wrapper).append(img);
+			cameraElem.append(wrapper);
+			console.log(data[i]);
+		}
+	}
+});
+</script>

@@ -1,0 +1,6 @@
+CREATE TABLE cameras (
+	id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name varchar(255) NOT NULL,
+	path varchar(255) NOT NULL,
+	type ENUM ("ezviz") NOT NULL
+);

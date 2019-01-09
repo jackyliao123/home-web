@@ -1,0 +1,12 @@
+{
+	"key": "ssl/server.key",
+	"cert": "ssl/server.crt",
+	"ca": "ssl/ca.crt",
+	"dhparam": "ssl/dhparam.pem",
+	"listen": {
+		"host": "0.0.0.0",
+		"port": 8080
+	},
+	"socketTimeout": 10000,
+	"updateInterval": 1000
+}

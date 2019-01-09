@@ -1,0 +1,9 @@
+{
+	"listen": 8000,
+	"database": {
+		"socketPath": "/run/mysqld/mysqld.sock",
+		"database": "home-web",
+		"user": "home-web",
+		"password": "database password"
+	}
+}

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec mysql --sigint-ignore --binary-as-hex -D home-web

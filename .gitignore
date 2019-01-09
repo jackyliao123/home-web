@@ -1,0 +1,3 @@
+node_modules/
+config.json
+**/test_insert_db.sql

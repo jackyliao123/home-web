@@ -1,0 +1,21 @@
+#!/bin/bash
+
+run_query() {
+	echo Running: "$@"
+	./mysql_cli < "$@"
+}
+
+run_all() {
+	for i in "$@"; do
+		run_query $i
+	done
+}
+
+run_query delete_db.sql
+run_query create_db.sql
+run_all ../modules/*/delete_db.sql
+run_all ../modules/*/create_db.sql
+run_all ../modules/*/insert_db.sql
+
+run_query test_insert_db.sql
+run_all ../modules/*/test_insert_db.sql
