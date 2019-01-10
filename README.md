@@ -42,3 +42,6 @@ To create the necessary tables (this will destroy existing tables in the databas
     ./reconstruct
 
 Note that your user need permissions on the `home-web` database in order for this to work.
+
+    npm install
+	npm start
