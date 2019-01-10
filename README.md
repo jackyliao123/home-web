@@ -15,6 +15,8 @@ This system is modular, and custom modules can be added for custom functionality
 | `esp8266_doorbell` | Not started | `esp8266` module | Plays doorbell sound effect when doorbell triggers
 | `pages` | Functional | | Serves the user pages to allow interaction with the modules
 
+The code that runs on the ESP8266 is at [home-esp8266](https://github.com/jackyliao123/home-esp8266).
+
 ### Pages
 | Page | Progress | Requirements | Description |
 |------|----------|--------------|-------------|
