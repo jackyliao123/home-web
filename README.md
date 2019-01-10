@@ -39,6 +39,6 @@ A `MySQL` or equivalent database with a database named `home-web` and a user nam
 To create the necessary tables (this will destroy existing tables in the database), run
 
     cd db_scripts
-    ./resconstruct
+    ./reconstruct
 
 Note that your user need permissions on the `home-web` database in order for this to work.
